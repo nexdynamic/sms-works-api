@@ -1,6 +1,6 @@
 {
     "name": "@nexdynamic/sms-works-api",
-    "version": "0.1.1",
+    "version": "1.0.0",
     "description": "The SMS Works API but with generated TypeScript types.",
     "license": "Unlicense",
     "main": "dist/index.js",

@@ -1,14 +1,22 @@
 {
     "name": "sms-works-api-typed",
-    "version": "1.0.0",
+    "version": "0.1.1",
     "description": "The SMS Works API but with generated TypeScript types.",
     "license": "Unlicense",
     "main": "dist/index.js",
     "scripts": {
         "build": "babel src -d dist && tsc",
         "prepare": "npm run build",
+        "publish:major": "npm run build && npm version major && git commit -am \"publishing major version to npm\"; npm publish && git push",
+        "publish:minor": "npm run build && npm version minor && git commit -am \"publishing minor version to npm\"; npm publish && git push",
+        "publish:patch": "npm run build && npm version patch && git commit -am \"publishing patch version to npm\"; npm publish && git push",
         "test": "mocha --require @babel/register --recursive"
     },
+    "publishConfig": {
+        "access": "restricted",
+        "registry": "https://npm.pkg.github.com"
+    },
+    "author": "SMS Works/Nexdynamic",
     "browser": {
         "fs": false
     },

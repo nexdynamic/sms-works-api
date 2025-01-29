@@ -1,0 +1,11 @@
+{
+    "include": ["src/**/*"],
+    "exclude": ["src/model/MessagesResponse.js","src/model/MessagesResponseMessages.js"],
+    "compilerOptions": {
+      "allowJs": true,
+      "declaration": true,
+      "emitDeclarationOnly": true,
+      "outDir": "dist",
+      "declarationMap": true
+    }
+}
